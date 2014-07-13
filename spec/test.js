@@ -4,6 +4,10 @@
 (function () {
   describe("A suite", function() {
 
+    beforeEach{
+
+	}
+
     it("has a SellIn value", function(){
 
     	var potato = new Item("Potato", 20, 10);
@@ -30,15 +34,11 @@
 
     it("system lowers sellIn and quality value every day", function(){
 
-    	var potato = new Item("Potato", 20, 10);
-    	items.push(potato);
-    	var fish = new Item("Fish", 48, 8);
-    	items.push(fish);
-
-    	for (var i = 0; i < items.length; i++) {
-    		expect(items[i].sellIn).toBe(items[i].sellIn);
-    		expect(items[i].quality).toBe(items[i].quality);
+    	expect(items[0].sellIn).toBe(items[i].sellIn);
+    	expect(items[0].quality).toBe(items[i].quality);
     	};
+    it("")
+
 
     });
 
